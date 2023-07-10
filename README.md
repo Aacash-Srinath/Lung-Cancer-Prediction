@@ -33,9 +33,11 @@ Plotting Bar Charts between Features & Labels
 ![image](https://github.com/Aacash-Srinath/Lung-Cancer-Prediction/assets/100955640/58dc645a-f02e-441d-960a-2937683c175a)
 ![image](https://github.com/Aacash-Srinath/Lung-Cancer-Prediction/assets/100955640/b4eab187-d97d-47e0-a150-c6b41a2e6e3c)
 
-
-
 ## Features & Label Extraction
-
+- Drop columns, AGE, GENDER, SMOKING, SHORTNESS OF BREATH as they do not contribute much to the final predictions
+- Combine ANXIETY and YELLOW_FINGERS as they are more correlated
+- Use ADASYN to generate synthetic data to fill the minority sample
 
 ## Model Building (Logistic Regression)
+- 25% of dataset to be used for testing
+- Returns predictions with 98% accuracy
